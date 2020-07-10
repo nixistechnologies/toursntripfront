@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+
+h1,p,span,div,h2,h3,h4,a{
+    color: white !important;
+}
+.txt-center{
+    text-align: center;
+    /* background-color: rgb(53, 52, 52); */
+}
+.m_heading{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: tourfont;
+}
+
+.theme-color{
+    color: #00ffa9 !important;;
+}
+.fl_rw{
+    display: flex;
+    flex-flow: row;
+}
+.fl_cl{
+    display: flex;
+    flex-flow: column;
+}
+
+.column, .columns{
+    width: auto ;
+}
+.image-radius{
+    border-radius: 15px;
+}
+
+div,article{
+    width: 100%;
+}
+
+.background_img{
+    height: 1080px;
+}
+
+.search_on_background{
+    position: absolute;
+    top:25%
+}
+
+.header div{
+    width: auto;
+}
+
+.navbar{
+    background-color: transparent;
+}
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active{
+    background-color: transparent;
+    color: #3273dc;
+}
+
+.custom-brand{
+    font-weight: bold;
+    font-size: 22px;
+}
+.navbar-item{
+    font-weight: bold;
+}
+
+/* .carousel div{
+    width:auto
+} */
+
+.center_background{
+    background-size: cover !important;
+    width: 180px !important;
+    height: 230px !important;
+    background-position: center !important;
+}
+.inner_bloc{
+    padding: 5px;
+    text-align: center;
+}
