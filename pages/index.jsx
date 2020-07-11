@@ -114,12 +114,11 @@ export default function Home() {
             </div>
 
 
-            <div style={{maxWidth:"900px",margin:"auto"}}>
-                {/* <h1 className="title">top Packages</h1> */}
+            {/* <div style={{maxWidth:"900px",margin:"auto"}}>
                 <TravelContent />
                 <BestTour />
                 <SinglePack />
-            </div>
+            </div> */}
 
 
 
