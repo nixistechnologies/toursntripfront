@@ -36,7 +36,7 @@ class MyApp extends App<AppInitialProps> {
               <Component {...pageProps} />
 
 
-              <style jsx global>{`
+              {/* <style jsx global>{`
                   @font-face {
                     font-family: 'tourFont';
                     src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf');
@@ -44,7 +44,7 @@ class MyApp extends App<AppInitialProps> {
                     // font-style: normal;
                     // font-display: swap;
                   }
-                `}</style>
+                `}</style> */}
               {/* </Provider> */}
           </ApolloProvider>
             // <Component {...pageProps} />

@@ -4,10 +4,10 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import  {List} from '../components/list'
-import TravelContent from '../components/HomePage/context'
-import BestTour from '../components/HomePage/bestTour'
+// import TravelContent from '../components/HomePage/context'
+// import BestTour from '../components/HomePage/bestTour'
 
-import SinglePack from '../components/HomePage/singlePack'
+// import SinglePack from '../components/HomePage/singlePack'
 // import {se} from '@fortawesome/fontawesome-svg-core'
 export default function Home() {
     return(
@@ -44,14 +44,14 @@ export default function Home() {
                         </div>
                     
                         <div className="navbar-end">
-                            <a class="navbar-item">
+                            <a className="navbar-item">
                                 Tours
                             </a>
-                            <a class="navbar-item">
+                            <a className="navbar-item">
                                 Explore
                             </a>
 
-                            <a class="navbar-item">
+                            <a className="navbar-item">
                                 Contact
                             </a>
 
