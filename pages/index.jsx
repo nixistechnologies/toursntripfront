@@ -14,7 +14,7 @@ export default function Home() {
         <HomeLayout title="Welcome">
 
             <div>
-                <div className="background_img" style={{background:"url('/2.jpg') no-repeat"}}>    
+                <div className="background_img" style={{background:"black"}}>    
 
                     <div className="header" style={{position:"absolute",top:0}}>
                         
