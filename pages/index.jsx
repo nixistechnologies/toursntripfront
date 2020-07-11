@@ -12,10 +12,10 @@ import  {List} from '../components/list'
 export default function Home() {
     return(
         <HomeLayout title="Welcome">
-
+            <h1>Welcome</h1>
+{/* 
             <div>
                 <div className="background_img" style={{background:"black"}}>    
-
                     <div className="header" style={{position:"absolute",top:0}}>
                         
                     <div className="navbar is-fixed-top_" role="navigation" aria-label="main navigation">
@@ -23,7 +23,6 @@ export default function Home() {
                             <Link href="/">
                             <a className="navbar-item" >
                                 <h1 className="is-4 custom-brand">toursNtrip</h1>
-                                {/* <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/> */}
                             </a>
                             </Link>
 
@@ -36,11 +35,6 @@ export default function Home() {
 
                         <div id="navbarBasicExample" className="navbar-menu">
                         <div className="navbar-start">
-                        {/* <Link href="/create">
-                            <a className="navbar-item">
-                                Add New
-                                </a>
-                        </Link> */}
                         </div>
                     
                         <div className="navbar-end">
@@ -58,11 +52,7 @@ export default function Home() {
                             <div className="navbar-item">
                             <div className="buttons">
                                 <a className="">
-                                {/* <strong>{data.currentUser.username}</strong> */}
                                 </a>
-                                {/* <a className="button is-light">
-                                Log in
-                                </a> */}
                             </div>
                             </div>
                         </div>
@@ -94,12 +84,10 @@ export default function Home() {
                             <div className="column is-2">
                                 <button type="button" style={{width:"100%"}} className="button is-primary">
                                     <span className="icon is-small">
-                                    {/* <Fontawesome name="search" color="white" /> */}
                                     <FontAwesomeIcon icon={faSearch} color="white"/>
                                     </span>
                                 </button>
                             </div>
-                            {/* <Fontawesome name="search" color="white" /> */}
                         </div>
                         </div>
                     </div>
@@ -111,7 +99,7 @@ export default function Home() {
                     </div>
                 </div>
                 
-            </div>
+            </div> */}
 
 
             {/* <div style={{maxWidth:"900px",margin:"auto"}}>
