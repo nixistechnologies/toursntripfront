@@ -3,70 +3,36 @@ import HomeLayout from '../components/HomeLayout'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
-import  {List} from '../components/list'
+// import  {List} from '../components/list'
+import dynamic from 'next/dynamic'
+// import NavBar from '../components/HomePage/navbar'
 // import TravelContent from '../components/HomePage/context'
 // import BestTour from '../components/HomePage/bestTour'
-
 // import SinglePack from '../components/HomePage/singlePack'
 // import {se} from '@fortawesome/fontawesome-svg-core'
+
+const TravelContent = dynamic(()=>import('../components/HomePage/context'))
+const BestTour = dynamic(()=>import('../components/HomePage/bestTour'))
+const SinglePack = dynamic(()=>import('../components/HomePage/singlePack'))
+const List = dynamic(()=>import('../components/list'))
+const NavBar = dynamic(()=>import('../components/HomePage/navbar'))
+
 export default function Home() {
     return(
+        // <h2>Welcome</h2>
+
         <HomeLayout title="Welcome">
-            <h1>Welcome</h1>
-{/* 
             <div>
-                <div className="background_img" style={{background:"black"}}>    
+                <div className="background_img" style={{background:"url(/4.webp)",position:'relative'}}>    
                     <div className="header" style={{position:"absolute",top:0}}>
                         
-                    <div className="navbar is-fixed-top_" role="navigation" aria-label="main navigation">
-                        <div className="navbar-brand">
-                            <Link href="/">
-                            <a className="navbar-item" >
-                                <h1 className="is-4 custom-brand">toursNtrip</h1>
-                            </a>
-                            </Link>
-
-                        <div role="button" onClick={()=>tgl()} className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </div>
-                        </div> 
-
-                        <div id="navbarBasicExample" className="navbar-menu">
-                        <div className="navbar-start">
-                        </div>
-                    
-                        <div className="navbar-end">
-                            <a className="navbar-item">
-                                Tours
-                            </a>
-                            <a className="navbar-item">
-                                Explore
-                            </a>
-
-                            <a className="navbar-item">
-                                Contact
-                            </a>
-
-                            <div className="navbar-item">
-                            <div className="buttons">
-                                <a className="">
-                                </a>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        </div>
-
-
-
+                    <NavBar />
 
 
                     </div>
 
 
-                    <div className="search_on_background">
+                    <div className="search_on_background" style={{width:"100%"}}>
                         <div style={{width:"60%",margin:"auto"}}>
 
                         <div style={{textAlign:"center",marginBottom:'110px'}}>
@@ -79,7 +45,7 @@ export default function Home() {
 
                         <div className="columns">
                             <div className="column is-10">
-                                <input type="text" style={{"background-color":"rgba(255,255,255,0.4)","color":"white"}} placeholder="search your tour" className="input"/>
+                                <input type="text" style={{backgroundColor:"rgba(255,255,255,0.4)","color":"white"}} placeholder="search your tour" className="input"/>
                             </div>
                             <div className="column is-2">
                                 <button type="button" style={{width:"100%"}} className="button is-primary">
@@ -91,22 +57,22 @@ export default function Home() {
                         </div>
                         </div>
                     </div>
-                    <div style={{position:'absolute',top:'90%',"maxWidth":""}}>
-                        <div style={{'maxWidth':'800px',"margin":"auto"}}>
+                    <div style={{position:'absolute',top:'50%',width:"100%"}}>
+                        <div style={{'maxWidth':'800px',"margin":"auto",}}>
                         <List />
                         </div>
                         
                     </div>
                 </div>
                 
-            </div> */}
+            </div>
 
 
-            {/* <div style={{maxWidth:"900px",margin:"auto"}}>
+            <div style={{maxWidth:"900px",margin:"auto"}} className="full_width">
                 <TravelContent />
                 <BestTour />
                 <SinglePack />
-            </div> */}
+            </div>
 
 
 

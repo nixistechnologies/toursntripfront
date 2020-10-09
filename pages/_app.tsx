@@ -40,9 +40,9 @@ class MyApp extends App<AppInitialProps> {
                   @font-face {
                     font-family: 'tourFont';
                     src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf');
-                    // font-weight: bold;
-                    // font-style: normal;
-                    // font-display: swap;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-display: swap;
                   }
                 `}</style> */}
               {/* </Provider> */}

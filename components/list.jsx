@@ -1,10 +1,13 @@
 import {CarouselProvider,Slider,Slide,ButtonBack,ButtonNext} from 'pure-react-carousel'
 
 
-export const List = () =>{
+export default () =>{
     return(
         <div>
             <style jsx>{`
+                .outer_bloc, .outer_bloc div{
+                    width:100%
+                }
                 ._head{
                     font-size:20px;
                     font-family:tourfont;

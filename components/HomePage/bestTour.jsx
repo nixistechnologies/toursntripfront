@@ -36,7 +36,7 @@ const BestTour =()=>{
             </div>
             
             
-            <div>
+            <div className="_a">
                 <div className="columns">
                     <div className="column">
                         <div className="row_item image-radius" style={{background:'url(https://res.cloudinary.com/kmadmin/image/upload/w_400,c_scale/kiomoi/548/nag-tibba-6.jpg)',backgroundSize:'cover',backgroundPosition:'center'}} >

@@ -1,6 +1,6 @@
 const SinglePack = () =>{
     return(
-        <div style={{marginBottom:"100px"}}>
+        <div style={{marginBottom:"100px"}} className="full_width">
             <div className="image-radius" style={{position:"relative",background:'url(https://res.cloudinary.com/kmadmin/image/upload/w_1300,c_scale/kiomoi/545/colombo.jpg)',backgroundPosition:'center',backgroundSize:'cover',height:"250px"}}>
                 <div>
                     <div style={{position:"absolute",top:"20%"}}>

@@ -18,7 +18,9 @@ h1,p,span,div,h2,h3,h4,a{
     font-weight: bold;
     font-family: tourfont;
 }
-
+.full_width, .full_width div{
+    width: 100%;
+}
 .theme-color{
     color: #00ffa9 !important;;
 }
@@ -34,13 +36,18 @@ h1,p,span,div,h2,h3,h4,a{
 .column, .columns{
     width: auto ;
 }
+.columns {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
 .image-radius{
     border-radius: 15px;
 }
 
-div,article{
+/* div,article{
     width: 100%;
-}
+} */
 
 .background_img{
     height: 1080px;
@@ -48,12 +55,10 @@ div,article{
 
 .search_on_background{
     position: absolute;
-    top:25%
+    top:15%
 }
 
-.header div{
-    width: auto;
-}
+
 
 .navbar{
     background-color: transparent;
@@ -85,4 +90,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .inner_bloc{
     padding: 5px;
     text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* .header div{
+        width: auto;
+    } */
 }
